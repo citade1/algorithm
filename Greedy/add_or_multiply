@@ -1,0 +1,17 @@
+# greedy 곱하기 혹은 더하기
+# 입력 02984 (0+2)x9x8x4 = 576 출력 576
+# 앞뒤로 0이 있을 때는 +, 그 이외에는 x
+
+def add_or_multiply():
+    data = list(map(int, input().split()))
+    
+    result = 0
+    for i in range(len(data)):
+        if data[i]==0 or result == 0:
+            result += data[i]
+        elif data[i]==1 or result==1:
+            result += data[i]
+        else:
+            result *= data[i]
+    
+    return result
