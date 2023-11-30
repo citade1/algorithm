@@ -7,7 +7,7 @@ def never_ever():
 
     target = 1
     for x in data: 
-        if target < x: # 자신보다 작은 수를 더해 만들어질 수도 없고, 그 다음 수보다도 작으면, 절대 만들어질 수 없는 수가 됨.
+        if target < x: # 현재까지의 수를 더해 만들어질 수도 없고, 그 다음 수보다도 작으면, 절대 만들어질 수 없는 수가 됨.
             break # 따라서 루프 빠져나옴.
         target += x 
 
