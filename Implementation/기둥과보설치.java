@@ -41,7 +41,7 @@ public class Main{ // for demonstration only
         int n = 5;
         int[][] build_frame = {{0,0,0,1},{2,0,0,1},{4,0,0,1},{0,1,1,1},{1,1,1,1},{2,1,1,1},{3,1,1,1},{2,0,0,0},{1,1,1,0},{2,2,0,1}};
         //int[][] build_frame = {{1,0,0,1},{1,1,1,1},{2,1,0,1},{2,2,1,1},{5,0,0,1},{5,1,0,1},{4,2,1,1},{3,2,1,1}};
-        Solution2 p = new Solution2();
+        Solution p = new Solution();
         int[][] result = p.solution(n, build_frame); 
         
         for(int i=0;i<result.length;i++){
