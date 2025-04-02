@@ -14,6 +14,7 @@ Click on a section to expand the list of problems.
   - [BOJ 2178 미로탐색](https://github.com/citade1/algorithm/DFS_BFS/boj_2178.py)
   - [BOJ 2583 영역 구하기](https://github.com/citade1/algorithm/DFS_BFS/boj_2583.py)
   - [BOJ 14502 연구소 문제](https://github.com/citade1/algorithm/DFS_BFS/boj_14502.py)
+  - [BOJ 14888 연산자 끼워넣기](https://github.com/citade1/algorithm/DFS_BFS/boj_14888.py)
   - [BOJ 18352 특정 거리의 도시 찾기](https://github.com/citade1/algorithm/DFS_BFS/boj_18352.py)
   - [BOJ 18405 경쟁적 전염](https://github.com/citade1/algorithm/DFS_BFS/boj_18405.py)
 
