@@ -23,36 +23,34 @@ n = int(input())
 data = list(map(int, input().split()))
 add, sub, mul, div = map(int, input().split())
 
-min_value = 1e9
-max_value = -1e9
+min_value = int(1e9)
+max_value = int(-1e9)
 
-def dfs(i, current_value):
-    global min_value, max_value, add, sub, mul, div 
-    if i==n:
-        min_value = min(min_value, current_value)
-        max_value = max(max_value, current_value)
-    
+def dfs(i, current):
+    global min_value, max_value, add, sub, mul, div
+    if i == n:
+        min_value = min(min_value, current)
+        max_value = max(max_value, current)
     else:
-        if add>0:
+        if add > 0:
             add -= 1
-            bfs(i+1, current_value + data[i])
+            dfs(i + 1, current + data[i])
             add += 1
-        if sub>0:
+        if sub > 0:
             sub -= 1
-            bfs(i+1, current_value - data[i])
+            dfs(i + 1, current - data[i])
             sub += 1
-        if mul>0:
+        if mul > 0:
             mul -= 1
-            bfs(i+1, current_value * data[i])
+            dfs(i + 1, current * data[i])
             mul += 1
-        if div>0:
+        if div > 0:
             div -= 1
-            if current_value<0:
-                bfs(i+1, current_value//data[i])
+            if current < 0:
+                dfs(i + 1, -(-current // data[i]))
             else:
-                bfs(i+1, current_value//data[i])
+                dfs(i + 1, current // data[i])
             div += 1
-
 
 dfs(1, data[0])
 
